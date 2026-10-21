@@ -1,0 +1,13 @@
+Adam's Ant Farm
+Copyright 2026 LunarLaurus and adams-ant-farm contributors
+
+This product includes original code licensed under the Apache License,
+Version 2.0 (see LICENSE). That license covers only this project's own
+original, copyrightable source code and documentation - see LEGAL.md for
+what it does and does not cover, and THIRD_PARTY.md for every vendored
+dependency and the license each one is actually distributed under
+(several are not Apache-2.0, and at least one - the decompilation this
+project is built on - currently has no license at all).
+
+Attribution for specific ported code, as distinct from general credit or
+inspiration, is in NOTICES.md.

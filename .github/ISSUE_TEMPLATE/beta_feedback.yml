@@ -1,0 +1,26 @@
+name: Beta feedback
+description: How the game feels, what is missing, what is confusing. Nothing is broken.
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Something that is broken goes in a **Bug report** instead. This form is for impressions: performance on your machine, controls that
+        feel wrong, a setting you could not find, a part of the launcher that confused you.
+  - type: input
+    id: version
+    attributes:
+      label: Version
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Your feedback
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Operating system and graphics card
+      description: Helps me tell whether it is only your set-up.

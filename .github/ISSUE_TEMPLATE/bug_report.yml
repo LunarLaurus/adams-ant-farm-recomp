@@ -1,0 +1,73 @@
+name: Bug report
+description: Something in the game or the launcher is broken.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for testing. In the launcher, open the **Session** window and choose **write a bug report**: it collects the log and the
+        settings and removes personal paths. Attach that file below.
+        **Never attach a ROM or anything extracted from one.**
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The release you downloaded, for example v0.10.2.
+    validations:
+      required: true
+  - type: dropdown
+    id: game
+    attributes:
+      label: Which game
+      options:
+        - USA
+        - Europe (PAL)
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Operating system
+      description: For example Windows 11 23H2, Ubuntu 24.04, Fedora 40.
+    validations:
+      required: true
+  - type: input
+    id: gpu
+    attributes:
+      label: Graphics card and driver
+      description: For example NVIDIA RTX 3060, driver 560.94.
+    validations:
+      required: true
+  - type: dropdown
+    id: api
+    attributes:
+      label: Graphics API
+      options:
+        - Vulkan (default)
+        - Direct3D 12
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to make it happen again
+      description: Which level, what you were doing, and whether it happens every time.
+  - type: textarea
+    id: report
+    attributes:
+      label: Bug report file
+      description: Drag the file from the launcher's Session window here, or paste its contents.
+  - type: checkboxes
+    id: legal
+    attributes:
+      label: Before you send
+      options:
+        - label: I used my own copy of the game, and nothing attached to this issue comes from a ROM.
+          required: true
