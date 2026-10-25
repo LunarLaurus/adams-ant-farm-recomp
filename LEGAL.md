@@ -17,9 +17,15 @@ project is a recompiled, playable port of a specific commercial game - not merel
 decompilation tooling. Nothing in this repository's license, `NOTICE`, or any other document is
 an assertion of ownership over, or a grant of rights to, Body Harvest or any of Nintendo's or
 Argonaut's intellectual property in it. This project contains no game data: no ROM, no dump, no
-extracted assets, textures, models, audio, or any other copyrighted material from the original
-game (this project's own hard rule - enforced throughout this codebase, not just stated here).
-Anyone running this project supplies their own legally obtained copy of the game.
+extracted or copied assets, textures, models or audio from the original game (this project's own
+hard rule - enforced throughout this codebase, not just stated here). Anyone running this project
+supplies their own legally obtained copy of the game.
+
+The one thing in this repository that shows the game's pictures is `media/`: a small number of
+screenshots of this program running, scaled and stripped of metadata, which the README uses to show what
+the port does. They are illustrations of the running program, not extracted game data, and the rights in
+what they depict remain with their owners; this licence does not cover them. They are never used to
+build or run anything.
 
 ## The decompilation this project is built on has no public license yet
 
