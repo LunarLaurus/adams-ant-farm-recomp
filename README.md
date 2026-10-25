@@ -19,7 +19,7 @@ launcher at your own file.
 ## Download
 
 Take the newest build from the [Releases page](../../releases): a Windows zip or a Linux tarball. `SHA256SUMS` lists the checksum
-of each file. Releases are marked pre-release while the version is below 1.0, so GitHub's "latest" shortcut does not point at them.
+of each file. Every version below 1.0 is a beta; the release notes list what is known not to work.
 
 ## Run it
 
