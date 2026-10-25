@@ -44,6 +44,19 @@ graphics API to Direct3D 12 in the launcher if the game will not start (its two 
 
 Defaults reproduce the original game, so an untouched install plays like the console.
 
+## Screenshots
+
+![The Comet, in 16:9 with the picture and distance settings turned up](media/wide169-comet.jpg)
+
+The same moment in America, as the console drew it, in 16:9 and in an ultrawide window (the wide two have the picture and distance settings
+turned up; the extra width brings a parked car into view at the right, which the 4:3 picture does not show at all):
+
+| Console (4:3) | 16:9 | Ultrawide (about 21:9) |
+|---|---|---|
+| ![America, as the console drew it](media/vanilla-america.jpg) | ![America in 16:9](media/wide169-america.jpg) | ![America in ultrawide](media/wide219-america.jpg) |
+
+These are screenshots of the program running, and more are in [media](media/README.md), with the settings used for each.
+
 ## Reporting problems
 
 1. In the launcher open the **Session** window and choose **write a bug report**. It collects the log and settings and removes personal
