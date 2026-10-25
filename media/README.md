@@ -40,6 +40,12 @@ as well as more of the sides.
 | `wide169-java.jpg` | Java | 16:9 |
 | `wide169-siberia.jpg` | Siberia | 16:9 |
 
+## The icon
+
+`icon.png` is the program's icon at 512 pixels (the same picture as `assets/icon.png`, which is compiled into the executables), kept here so
+a launcher or a list that wants a URL for the project's icon can use the public repository's own copy. It is not a screenshot and shows no game
+data; it is the project's own picture.
+
 ## Making more
 
 `python tools/capture_media.py capture OUTDIR` runs the built game once per look and takes the same eight scenes (Greece at four headings, then
@@ -50,9 +56,9 @@ with no metadata.
 
 ## Rules for this folder
 
-- Only this README and JPEG or PNG screenshots.
+- Only this README, JPEG or PNG screenshots, and the one icon (`icon.png`).
 - Each file under 800 KB and the folder under 12 MB, with no EXIF block and no PNG text chunk. `tools/public_release.py` checks it, and refuses to
   sync a folder that breaks it.
-- Name a file `look-scene.jpg`, in lower case with hyphens.
+- Name a screenshot `look-scene.jpg`, in lower case with hyphens.
 - A screenshot shown in the README must be in this folder; a test fails otherwise.
 - This is the only place pictures of the game are kept. A capture used for testing stays out of version control.
