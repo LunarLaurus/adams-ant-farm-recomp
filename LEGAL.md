@@ -57,6 +57,38 @@ binary. If you distribute a build of this project, you are distributing a GPL-3.
 not an Apache-2.0 one - see `THIRD_PARTY.md` for the full dependency list and each one's actual
 license.
 
+## Distribution
+
+This section says what a release of this project contains, what the player supplies, and how the program uses the player's
+copy. Each statement rests on `docs/reference/ASSET-POSITION.md`, which records how it was measured, on the packages of
+release v0.10.4.
+
+**What a release contains.** A release is a Linux archive, a Windows archive and a source archive. The first two hold the
+programs (`adams-ant-farm`, its European variant `adams-ant-farm-eu`, and the launcher `bh-launcher`), a `README.txt`, and a
+`legal` folder with the licences, the pinned dependency commits (`PINS.txt`), the corresponding-source pointer (`SOURCE.txt`)
+and the patches applied to the dependencies. They hold no data files, and the Windows archive holds no libraries: the launcher
+downloads `SDL2.dll` (and, for Direct3D 12, the shader-compiler libraries) on first use and checks them against hashes pinned in
+this repository. A release contains no ROM, no dump of one, and no extracted textures, models, audio or text of the game. A scan
+of both packages for any 64-byte run of the player's ROM found none, and no section of any program is of ROM size.
+
+**What a release does contain that comes from the game.** The programs contain machine code recompiled from the decompilation,
+translated microcode for the console's signal processor, and hash values that identify a supported copy of the game and cannot
+reproduce it. Whether that recompiled code is a derivative of the game's code is a legal question this document does not answer;
+see the section on the decompilation above.
+
+**What the player supplies.** A copy of the game. The US release (SHA-1 `bbb6666f5014a473747ee4145f036d9fb25d7348`) is
+supported; the European release (SHA-1 `67750e2e7ab46fedf65a271ab7f4c7aad92ae355`) is a preview that the launcher identifies.
+The launcher refuses any other file.
+
+**How the program uses that copy.** The launcher reads the whole file to check its size and SHA-1 when it is chosen and again
+each time the launcher starts, and keeps only its path. When the game starts it checks the copy and writes a full copy of it into
+a `session` folder next to the program (or the folder named by `BH_CONFIG_DIR`) on the player's own machine, and it reads that
+copy into memory on every start. The game's assets are read from memory as it plays; nothing is extracted to disk. In a
+developer checkout these copies sit in folders this repository's version control ignores.
+
+**What a distributor owes.** A release is a GPL-3.0 combined work (see above). `docs/reference/RELEASE-OBLIGATIONS.md` lists
+what a release must carry, and a test checks that list against a package.
+
 ## Full third-party inventory
 
 See `THIRD_PARTY.md` for every vendored dependency and the license it's actually under, and
