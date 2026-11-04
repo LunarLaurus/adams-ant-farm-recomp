@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for testing. In the launcher, open the **Session** window and choose **write a bug report**: it collects the log and the
+        Thank you for testing. In the launcher, open the **Session** window and choose **Generate data package**: it collects the log and the
         settings and removes personal paths. Attach that file below.
         **Never attach a ROM or anything extracted from one.**
   - type: input
