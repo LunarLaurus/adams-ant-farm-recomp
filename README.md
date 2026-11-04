@@ -59,10 +59,11 @@ These are screenshots of the program running, and more are in [media](media/READ
 
 ## Reporting problems
 
-1. In the launcher open the **Session** window and choose **write a bug report**. It collects the log and settings and removes personal
+1. In the launcher open the **Session** window and choose **Generate data package**. It collects the log and settings and removes personal
    paths.
-2. Open an [issue](../../issues/new/choose) with the **Bug report** form and attach that file. Say which game (US or PAL), your
-   operating system and your graphics card.
+2. Choose **Generate Bug Report** in the same window: it opens the **Bug report** form in your browser with the version, game, operating
+   system and graphics API filled in (or open an [issue](../../issues/new/choose) yourself with that form). Attach the package. Say your
+   graphics card and what happened.
 
 Questions, ideas and "how do I...?" go in [Discussions](../../discussions). Please never attach a ROM or anything extracted from one.
 
