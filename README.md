@@ -3,8 +3,8 @@
 A native PC port of **Body Harvest** (Nintendo 64, 1998). It is built from the community decompilation of the game and statically
 recompiled with N64Recomp, for 64-bit Windows and Linux. The US release and the European (PAL) release both run.
 
-> **Beta.** The game is playable from start to finish with real audio, but it is not finished and you will find rough edges. That is
-> what the beta is for: please tell me what you find (see [Reporting problems](#reporting-problems)).
+> **Pre-1.0.** The game is playable from start to finish with real audio, but it is not finished and you will find rough edges. Please tell
+> me what you find (see [Reporting problems](#reporting-problems)).
 
 **No game data is included, in any form.** You need your own dump of the game:
 
@@ -19,7 +19,7 @@ launcher at your own file.
 ## Download
 
 Take the newest build from the [Releases page](../../releases): a Windows zip or a Linux tarball. `SHA256SUMS` lists the checksum
-of each file. Every version below 1.0 is a beta; the release notes list what is known not to work.
+of each file. Builds below 1.0 are not finished; the release notes list what is known not to work.
 
 ## Run it
 
